@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 import google.generativeai as genai
 app = FastAPI()
-genai.configure(api_key="AIzaSyD5kWDwn58m0SUv7-4ndGINF22XtYJQK04")
+genai.configure(api_key="")
 generation_config = {
     "temperature": 1,
     "top_p": 0.95,
