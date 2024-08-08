@@ -86,7 +86,6 @@ def get_data():
 @app.post("/get-total-salary")
 def total_employee_count(employee: employee):
     try:
-        print(employee)
         # Correct query format: use $gt for greater than operator
         query = {"emp_salary": {"$gt": employee.emp_salary}}
         total_count = collection.count_documents(query)
